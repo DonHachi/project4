@@ -1,0 +1,56 @@
+html,body{
+    background-image: url(/static/imgs/Books.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100%;
+    }
+h1 {
+    color: red;
+    text-align: center; }
+    
+h3 {
+font-style: italic;
+color: lightgray;
+font-size: 90%; }
+
+table {
+border-collapse: collapse; }
+
+td, th {
+border: 1px solid black; }
+
+div h4 {
+color: purple; }
+
+#marvel {
+background-color: lightseagreen; }
+
+#dc {
+background-color: lightgreen; }
+
+#manga {
+background-color: lightsalmon; }
+
+.heroTitle, h5 {
+color: red; }
+
+h5 {
+font-style: italic; }
+
+@media only screen and (max-width: 600px) {
+.hide {
+    display: none; } }
+
+.ball {
+    margin-top: 50px;
+    margin-left: -200px;
+    width: 120px;
+    height: 40px;
+    background-color: red;
+    border-radius: 20px;
+    transition: 1s;
+    line-height: 40px;
+    text-align: center;
+    }
+/*# sourceMappingURL=styles.css.map */
+

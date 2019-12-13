@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <script>
+        function save() {
+            localStorage.setItem("ready", "ready")
+        }
+        window.onload = function () {
+            var ball = document.getElementById('ball')
+            ball.style.marginLeft = "25px";
+        };
+        function bye(){
+            
+            document.getElementById("ball").innerHTML = "Welcome!";
+        }
+    </script>
+     <script type="text/javascript" src="/static/js/move.js"></script>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand">Hero Page 2.0</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/marvel">Marvel <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/dc">DC</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/manga" tabindex="-1" aria-disabled="true">Manga</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<form>
+        <img id = "myImage" src = "/static/imgs/batman.jpg" />
+        <p></p>
+        <input type = "button" value = "Click Me" onclick = "moveRight();" />
+     </form>  
+</html>

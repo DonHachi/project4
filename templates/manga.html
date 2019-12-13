@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manga Heros</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand">Hero Page 2.0</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/marvel">Marvel <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dc">DC</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/manga" tabindex="-1" aria-disabled="true">Manga</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="/" tabindex="-1" aria-disabled="true">Home</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+                function bye() {
+        
+                    document.getElementById("ball").innerHTML = "Welcome!";
+                }
+                window.onload = function () {
+                    var ball = document.getElementById('ball')
+                    ball.style.marginLeft = "25px";
+                };
+                </script>
+    </head>
+    <body>
+            <div class="ball" id="ball" onclick="bye()">
+                    Loaded
+                </div>
+        <h2 class="heroTitle">this is manga</h2>
+        <a href="/index">Home</a>
+        <h3 class="hide">      
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Etiam id iaculis nisi. Nullam vehicula sed neque in gravida. 
+            In consequat volutpat enim, eget sollicitudin urna fringilla interdum. 
+        </h3>
+        <table class="table" id="manga">
+                <th scope="col">Name</th>
+                <th scope="col">Power level</th>
+                <th scope="col">Intelligence</th>
+                <th scope="col">Image</th>
+        
+                <tr scope="row">
+                    <td>Naruto</td>
+                    <td>8/10</td>
+                    <td>3/10</td>
+                    <td><img src="/static/imgs/naruto.png" width="50" height="50"></td>
+                </tr>
+                <tr scope="row">
+                    <td>Ichigo Kurosaki</td>
+                    <td>9/10</td>
+                    <td>7/10</td>
+                    <td><img src="/static/imgs/ichigoKurosaki.png" width="50" height="50"> </td>
+                </tr>
+                <tr scope="row">
+                    <td>Monkey D. Luffy</td>
+                    <td>9/10</td>
+                    <td>2/10</td>
+                    <td><img src="/static/imgs/luffy.png" width="50" height="50"> </td>
+                </tr>
+        </table>
+    </body>
+</html>
